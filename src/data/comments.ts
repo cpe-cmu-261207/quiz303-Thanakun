@@ -1,3 +1,6 @@
+import { useState } from "react"
+import App from "../App"
+
 export type CommentType = {
   username: string;
   userImagePath: string;
@@ -5,6 +8,9 @@ export type CommentType = {
   likeNum: number;
   replies: CommentType[]
 }
+
+
+
 
 export const comments: CommentType[] = [
   {
